@@ -50,12 +50,13 @@ function logout() {
             const date = document.getElementById("date-input").value;
             const type = document.querySelector('input[name="type-input"]:checked').value;
                 
-            data.transactions .unshift({
-                value:value, description: description, date: date, type: type 
+            myMap = new Map()
+            myMap.set('value', value)
+            myMap.set('description', description)
+            myMap.set('date', date)
+            myMap.set('type', type)
 
-
-            });
-
+            data.transactions.unshift(myMap);
             
             saveData();
             e.target.reset();
