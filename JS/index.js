@@ -23,7 +23,7 @@ document.getElementById("criar-modal").addEventListener("submit", function (e) {
     saveAccount({
         login: email,
         password: password,
-        transction: []
+        transactions: []
     })
    
     myModal.hide();
@@ -34,6 +34,7 @@ document.getElementById("criar-modal").addEventListener("submit", function (e) {
 
 function saveAccount(data) {
     localStorage.setItem(data.login, JSON.stringify(data));
+
 }
          
                  //entrar no sistema
