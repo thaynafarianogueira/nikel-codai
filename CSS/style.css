@@ -3,7 +3,7 @@
 }
 
 #home-back{
-    background: linear-gradient(120deg, white 44.9%, #4c79d3  45%)  no-repeat, fixed;
+    background: linear-gradient(120deg, white 44.9%, #4c79d3  45%)  fixed;
 }
 .parag-login{
     font-weight: bolder;
@@ -45,6 +45,7 @@
 .entrada-saida{
     background-color: white;
     border-radius: 20px 20px 0px 0px;
+    box-shadow: 0px 0px 4px rgba(16, 16, 16, 0.616);
     padding:20px 0px 0px;
     text-justify:center;
 
